@@ -1,0 +1,156 @@
+.terminal-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'JetBrains Mono', monospace;
+  background-image: radial-gradient(circle at 20% 10%, rgba(184, 115, 58, 0.06), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(184, 115, 58, 0.05), transparent 40%);
+}
+
+.terminal-page .titlebar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--coffee-dark);
+  border-bottom: 1px solid rgba(200, 160, 116, 0.25);
+}
+.terminal-page .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.terminal-page .dot.r {
+  background: #b8733a;
+}
+.terminal-page .dot.y {
+  background: #c8a074;
+}
+.terminal-page .dot.g {
+  background: #8a6a4a;
+}
+.terminal-page .titlebar .name {
+  margin-left: 12px;
+  font-size: 0.78rem;
+  color: var(--dim);
+}
+
+.terminal-page #screen {
+  flex: 1;
+  padding: 22px 24px 20px;
+  overflow-y: auto;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.terminal-page .line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-bottom: 6px;
+}
+.terminal-page .ascii {
+  color: var(--caramel);
+  white-space: pre;
+  font-size: 0.65rem;
+  line-height: 1.15;
+  overflow-x: auto;
+}
+.terminal-page .prompt-line {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.terminal-page .prompt {
+  color: var(--caramel);
+  flex-shrink: 0;
+}
+.terminal-page .cmd-echo {
+  color: var(--foam);
+}
+.terminal-page .out {
+  color: var(--cream);
+  opacity: 0.92;
+}
+.terminal-page .dim {
+  color: var(--dim);
+}
+.terminal-page .heading {
+  color: var(--foam);
+  font-weight: 700;
+}
+.terminal-page .accent {
+  color: var(--caramel);
+  font-weight: 600;
+}
+.terminal-page a {
+  color: var(--caramel);
+}
+.terminal-page .stat {
+  color: var(--foam);
+  font-weight: 600;
+}
+.terminal-page .out-list {
+  margin: 4px 0 4px 18px;
+  padding: 0;
+}
+.terminal-page .out-list li {
+  margin: 2px 0;
+}
+
+.terminal-page .input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px 16px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.terminal-page .input-row input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--foam);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.92rem;
+  caret-color: var(--caramel);
+}
+.terminal-page .cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: var(--caramel);
+  animation: blink 1s steps(1) infinite;
+  vertical-align: middle;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.terminal-page .footer-link {
+  text-align: center;
+  padding: 14px;
+  font-size: 0.72rem;
+  color: var(--dim);
+  border-top: 1px solid rgba(200, 160, 116, 0.15);
+}
+.terminal-page .footer-link a {
+  color: var(--dim);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--dim);
+}
+.terminal-page .footer-link .copyright-icon {
+  color: var(--caramel);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terminal-page .cursor {
+    animation: none;
+  }
+}

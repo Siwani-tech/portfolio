@@ -1,0 +1,37 @@
+:root {
+  --espresso: #2b1810;
+  --coffee-dark: #3d2418;
+  --coffee-mid: #6f4522;
+  --latte: #c8a074;
+  --cream: #f3e6d5;
+  --foam: #fffaf3;
+  --caramel: #b8733a;
+  --dim: rgba(200, 160, 116, 0.55);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--espresso);
+  color: var(--cream);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
