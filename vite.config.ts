@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 // If you rename the repo, update this to match, or assets will 404 on the live site.
 export default defineConfig({
   plugins: [react()],
-  base: '/siwani-portfolio/',
+  base: '/portfolio/',
 })
