@@ -230,7 +230,7 @@ export default function TerminalPage() {
         content: (
           <div>
             <div className="heading">{profile.name}</div>
-            <div className="dim">— full-stack engineer, brewed on Golang &amp; React</div>
+            <div className="dim">— Software Developer, brewed on Golang &amp; React</div>
             <div className="dim">type 'help' or 'menu' to see what's on order.</div>
           </div>
         ),

@@ -11,7 +11,7 @@ import './StoryPage.css'
 
 export default function StoryPage() {
   useEffect(() => {
-    document.title = 'Siwani Sinha — Full-Stack Engineer'
+    document.title = 'Siwani Sinha — Software Developer'
   }, [])
 
   return (
