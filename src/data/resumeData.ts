@@ -34,7 +34,7 @@ export const profile = {
   summary:
     "I build authentication systems, developer platforms, and internal tooling at Reliance — the kind of work that's mostly invisible when it's done right. This is that work, poured out.",
   longSummary:
-    'Full Stack Software Engineer with 2.9 years of experience building scalable web applications, authentication systems, developer platforms, and internal tooling at Reliance. Proficient in React.js, Next.js, TypeScript, and Golang.',
+    'Software Developer with 2.9 years of experience building scalable web applications, authentication systems, developer platforms, and internal tooling at Reliance. Proficient in React.js, Next.js, TypeScript, and Golang.',
 }
 
 export const education = {
