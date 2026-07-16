@@ -1,11 +1,26 @@
+function scrollToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
 export default function Nav() {
+  const sections = ["beans", "grind", "brew", "pour", "sip"];
+
   return (
     <nav>
-      <a href="#beans">Beans</a>
-      <a href="#grind">Grind</a>
-      <a href="#brew">Brew</a>
-      <a href="#pour">Pour</a>
-      <a href="#sip">Sip</a>
+      {sections.map((id) => (
+        <a
+          key={id}
+          href={`#${id}`}
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection(id);
+          }}
+        >
+          {id.charAt(0).toUpperCase() + id.slice(1)}
+        </a>
+      ))}
     </nav>
-  )
+  );
 }
