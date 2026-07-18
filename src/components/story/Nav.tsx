@@ -1,12 +1,9 @@
 function scrollToSection(id: string) {
-  document.getElementById(id)?.scrollIntoView({
-    behavior: "smooth",
-  });
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 }
 
 export default function Nav() {
   const sections = ["beans", "grind", "brew", "pour", "sip"];
-
   return (
     <nav>
       {sections.map((id) => (
